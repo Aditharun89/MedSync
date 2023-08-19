@@ -1,0 +1,338 @@
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/_coordinator"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent">
+	<com.google.android.material.appbar.AppBarLayout
+		android:id="@+id/_app_bar"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:theme="@style/AppTheme.AppBarOverlay">
+		<androidx.appcompat.widget.Toolbar
+			android:id="@+id/_toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="?attr/actionBarSize"
+			android:background="?attr/colorPrimary"
+			app:popupTheme="@style/AppTheme.PopupOverlay" />
+	</com.google.android.material.appbar.AppBarLayout>
+	<LinearLayout
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior">
+		<TextView
+			android:id="@+id/textview37"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:background="#3F51B5"
+			android:text="MED SCHEDULE"
+			android:textSize="20sp"
+			android:textStyle="bold"
+			android:textColor="#000000" />
+		<ScrollView
+			android:id="@+id/vscroll1"
+			android:layout_width="match_parent"
+			android:layout_height="match_parent"
+			android:padding="8dp"
+			android:background="#D0D1FF">
+			<LinearLayout
+				android:id="@+id/linear11"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:background="#D0D1FF"
+				android:orientation="vertical">
+				<LinearLayout
+					android:id="@+id/linear12"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#D0D1FF"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview1"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#3F51B5"
+						android:text="Med Name"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text=":"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext1"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="Eg: Paracetamol "
+						android:textColorHint="#607D8B" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear13"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#D0D1FF"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview3"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#3F51B5"
+						android:text="Quantity "
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview4"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text=":"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext2"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="Eg: 1 or 2 "
+						android:textColorHint="#607D8B"
+						android:inputType="numberDecimal" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear14"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#D0D1FF"
+					android:orientation="horizontal">
+					<TextView
+						android:id="@+id/textview5"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#3F51B5"
+						android:text="Set Time"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<TextView
+						android:id="@+id/textview7"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text=":"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext4"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="Hr"
+						android:textColorHint="#607D8B"
+						android:inputType="numberDecimal" />
+					<TextView
+						android:id="@+id/textview22"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text=":"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext5"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="Min"
+						android:textColorHint="#607D8B"
+						android:inputType="numberDecimal" />
+					<TextView
+						android:id="@+id/textview24"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text=":"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext3"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="Sec"
+						android:textColorHint="#607D8B"
+						android:inputType="numberDecimal" />
+					<TextView
+						android:id="@+id/textview36"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:text=":"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#000000" />
+					<EditText
+						android:id="@+id/edittext8"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:textSize="16sp"
+						android:textStyle="bold"
+						android:textColor="#000000"
+						android:hint="AM/PM"
+						android:textColorHint="#607D8B" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear16"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#D0D1FF"
+					android:orientation="horizontal">
+					<LinearLayout
+						android:id="@+id/linear19"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:orientation="horizontal">
+						<TextView
+							android:id="@+id/textview15"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:background="#3F51B5"
+							android:text="Set Date"
+							android:textSize="16sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<TextView
+							android:id="@+id/textview26"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:padding="8dp"
+							android:text=":"
+							android:textSize="16sp"
+							android:textStyle="bold"
+							android:textColor="#000000" />
+						<LinearLayout
+							android:id="@+id/linear22"
+							android:layout_width="match_parent"
+							android:layout_height="wrap_content"
+							android:orientation="horizontal">
+							<TextView
+								android:id="@+id/textview30"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Day"
+								android:textSize="16sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<TextView
+								android:id="@+id/textview34"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text=":"
+								android:textSize="16sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<TextView
+								android:id="@+id/textview31"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Month"
+								android:textSize="16sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<TextView
+								android:id="@+id/textview33"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text=":"
+								android:textSize="16sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+							<TextView
+								android:id="@+id/textview32"
+								android:layout_width="wrap_content"
+								android:layout_height="wrap_content"
+								android:padding="8dp"
+								android:text="Year"
+								android:textSize="16sp"
+								android:textStyle="bold"
+								android:textColor="#000000" />
+						</LinearLayout>
+					</LinearLayout>
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear17"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:background="#D0D1FF"
+					android:orientation="horizontal">
+					<DatePicker
+						android:id="@+id/datepicker1"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#3F51B5" />
+				</LinearLayout>
+				<LinearLayout
+					android:id="@+id/linear21"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:padding="8dp"
+					android:orientation="horizontal">
+					<Button
+						android:id="@+id/button1"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:padding="8dp"
+						android:background="#3F51B5"
+						android:text="SAVE"
+						android:textSize="12sp"
+						android:textColor="#000000" />
+				</LinearLayout>
+			</LinearLayout>
+		</ScrollView>
+	</LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

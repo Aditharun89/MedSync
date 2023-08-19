@@ -1,0 +1,109 @@
+<LinearLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:orientation="vertical">
+	<LinearLayout
+		android:id="@+id/linear1"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:padding="8dp"
+		android:background="#D0D1FF"
+		android:gravity="center_horizontal"
+		android:orientation="vertical"
+		android:layout_gravity="center_horizontal|center_vertical">
+		<LinearLayout
+			android:id="@+id/linear2"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:padding="8dp"
+			android:background="#3F51B5"
+			android:gravity="left"
+			android:orientation="horizontal"
+			android:layout_gravity="left">
+			<ImageView
+				android:id="@+id/imageview1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:paddingLeft="10dp"
+				android:paddingTop="16dp"
+				android:paddingRight="8dp"
+				android:paddingBottom="8dp"
+				android:src="@drawable/hme3"
+				android:scaleType="center" />
+			<TextView
+				android:id="@+id/textview1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:padding="8dp"
+				android:gravity="left"
+				android:text="Homescreen"
+				android:textSize="30sp"
+				android:textStyle="bold"
+				android:textColor="#000000"
+				android:layout_gravity="left" />
+		</LinearLayout>
+		<Button
+			android:id="@+id/button1"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="100dp"
+			android:padding="8dp"
+			android:background="#3F51B5"
+			android:text="Med Schedule "
+			android:textSize="18sp"
+			android:textColor="#000000" />
+		<Button
+			android:id="@+id/compliance_button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:padding="8dp"
+			android:background="#3F51B5"
+			android:text="Compliance History "
+			android:textSize="18sp"
+			android:textColor="#000000" />
+		<Button
+			android:id="@+id/medfinder_button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:padding="8dp"
+			android:background="#3F51B5"
+			android:text="Med Finder"
+			android:textSize="18sp"
+			android:textColor="#000000" />
+		<Button
+			android:id="@+id/sfx_button"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:padding="8dp"
+			android:background="#3F51B5"
+			android:text="Side Effects Checker "
+			android:textSize="18sp"
+			android:textColor="#000000" />
+		<Button
+			android:id="@+id/button5"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="15dp"
+			android:padding="8dp"
+			android:background="#3F51B5"
+			android:text="Medication History "
+			android:textSize="18sp"
+			android:textColor="#000000" />
+		<Button
+			android:id="@+id/logout_button"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_marginTop="100dp"
+			android:padding="8dp"
+			android:background="#3F51B5"
+			android:text="Logout"
+			android:textSize="14sp"
+			android:textColor="#000000" />
+	</LinearLayout>
+</LinearLayout>
